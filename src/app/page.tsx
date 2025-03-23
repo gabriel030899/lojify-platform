@@ -62,7 +62,7 @@ export default function Home() {
             <h2 className="mb-3">Performance de Vendas</h2>
             <div className="grid grid-cols-4 gap-4">
               {performanceVendas.map((item) => (
-                <div className="h-30 bg-white flex flex-col items-center justify-start p-2 rounded-sm">
+                <div key={item.id} className="h-30 bg-white flex flex-col items-center justify-start p-2 rounded-sm">
                   <span>{item.type}</span>
                   <span className="h-full flex justify-center items-center">R$ 0,00</span>
                 </div>
